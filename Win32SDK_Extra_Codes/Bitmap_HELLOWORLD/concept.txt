@@ -1,0 +1,85 @@
+The GetTextExtentPoint32 function computes the width and height of the specified string of text.
+
+Syntax
+C++
+
+Copy
+BOOL GetTextExtentPoint32A(
+  HDC    hdc,
+  LPCSTR lpString,
+  int    c,
+  LPSIZE psizl
+);
+Parameters
+hdc
+
+A handle to the device context.
+
+lpString
+
+A pointer to a buffer that specifies the text string. The string does not need to be null-terminated, because the c parameter specifies the length of the string.
+
+c
+
+The length of the string pointed to by lpString.
+
+psizl
+
+A pointer to a SIZE structure that receives the dimensions of the string, in logical units.
+
+Return value
+If the function succeeds, the return value is nonzero.
+
+If the function fails, the return value is zero.
+
+
+
+The CreateCompatibleBitmap function creates a bitmap compatible with the device that is associated with the specified device context.
+
+Syntax
+C++
+
+Copy
+HBITMAP CreateCompatibleBitmap(
+  HDC hdc,
+  int cx,
+  int cy
+);
+Parameters
+hdc
+
+A handle to a device context.
+
+cx
+
+The bitmap width, in pixels.
+
+cy
+
+The bitmap height, in pixels.
+
+Return value
+If the function succeeds, the return value is a handle to the compatible bitmap (DDB).
+
+If the function fails, the return value is NULL.
+
+
+The ReleaseDC function releases a device context (DC), freeing it for use by other applications. The effect of the ReleaseDC function depends on the type of DC. It frees only common and window DCs. It has no effect on class or private DCs.
+
+Syntax
+C++
+
+Copy
+int ReleaseDC(
+  HWND hWnd,
+  HDC  hDC
+);
+Parameters
+hWnd
+
+A handle to the window whose DC is to be released.
+
+hDC
+
+A handle to the DC to be released.
+

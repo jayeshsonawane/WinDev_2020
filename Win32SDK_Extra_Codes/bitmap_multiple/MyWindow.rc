@@ -1,0 +1,14 @@
+#include "MyWindow.h"
+MYICON ICON amc.ico
+MYBITMAP1 BITMAP img1.bmp
+MYBITMAP2  BITMAP img2.bmp
+MYBITMAP3 BITMAP img3.bmp
+MYBITMAP4 BITMAP img4.bmp
+MYBITMAP5 BITMAP img5.bmp
+MYBITMAP6 BITMAP img6.bmp
+MYBITMAP7 BITMAP img7.bmp
+
+
+
+
+
